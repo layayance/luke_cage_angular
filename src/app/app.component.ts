@@ -7,38 +7,38 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  mySnap!:FaceSnap;
-  myOtherSnap!: FaceSnap;
-  myLastSnap! : FaceSnap; 
+
+  faceSnaps!: FaceSnap[];
 
   ngOnInit(){
-    this.mySnap = {
-      title: 'Luke Cage',
+      this.faceSnaps = [
+    {  
+      title: 'luke cage',
       description:  'Il rentablir lordre à Harlem !',
       imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQUBTV1e1Ry9QtXT-tztl71i8NgeGO1VL4w&usqp=CAU',
       createdDate:   new Date(),
-      snaps:  0,
+      snaps:  205,
       location: 'New York'
-      };
+    },
 
-    this.myOtherSnap = {
-      title:'Cornell Cottonmouh',
-      description:  'Le méchant d Harlem',
-      imageUrl: 'https://imgsrc.cineserie.com/2020/07/luke-cage-la-verite-sur-la-mort-du-personnage-de-mahershala-ali.jpg?ver=1',
-      createdDate: new Date(),
-      snaps: 1,
-      location: 'Harlem'
-    };
+      {
+        title:'cornell cottonmouh',
+        description:  'Le méchant d Harlem',
+        imageUrl: 'https://imgsrc.cineserie.com/2020/07/luke-cage-la-verite-sur-la-mort-du-personnage-de-mahershala-ali.jpg?ver=1',
+        createdDate: new Date(),
+        snaps: 0,
+        location: 'Harlem'
+      },
 
-    this.myLastSnap = {
-      title:'Misty',
-      description:  'Une officière qui éssai de rétablir l odre à Harlem',
-      imageUrl: 'https://zupimages.net/up/18/14/63sf.jpg',
-      createdDate: new Date(),
-      snaps: 3,
-      location: 'Ditrict 29éme'
-    };
-
+      {
+        title:'misty',
+        description:  'Une officière qui éssai de rétablir l odre à Harlem',
+        imageUrl: 'https://zupimages.net/up/18/14/63sf.jpg',
+        createdDate: new Date(),
+        snaps: 0,
+        location: 'Ditrict 29éme'
+      }
+    ];
   }
-}
-                                                                                                                                                      
+    
+}                                                                                                                                                  

@@ -22,10 +22,8 @@ export class FaceSnapComponent implements OnInit{
       this.faceSnap.snaps--;
       this.buttonText = 'Plus, 1 !';
     }
-    // if (this.buttonText === 'Plus, 1 !') else{
-    //   this.buttonText.snaps--;
-    //   this.buttonText = 'Plus, 1 !';
-    // }
+
   }
+  
 }
 
