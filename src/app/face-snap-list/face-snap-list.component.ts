@@ -15,16 +15,17 @@ export class FaceSnapListComponent implements OnInit {
 
 ngOnInit(): void {
   this.faceSnaps = this.faceSnapsServices.getAllFaceSnaps();
-  const tempArray = this.faceSnapsServices.getAllFaceSnaps();
-  tempArray.push({
-    id: 4,
-    title:'fdfd',
-    description:  'dfdf officière qui éssai de rétablir l\'odre à Harlem',
-    imageUrl: 'https://zupimages.net/up/18/14/63sf.jpg',
-    createdDate: new Date(),
-    snaps: 99,
-    location: 'dfdfDitrict 29éme'
-  })
+  // const tempArray = this.faceSnapsServices.getAllFaceSnaps();
+  // tempArray.push({
+//     id: 4,
+//     title:'Shade',
+//     description:'Le bras droit de Collonmouth',
+//     imageUrl: 'https://www.google.fr/url?sa=i&url=https%3A%2F%2Fscreencrush.com%2Fluke-cage-season-2-shades-theo-rossi%2F&psig=AOvVaw1b-y-mRZ2lYDqZXqQ9v4ED&ust=1676390183210000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCJCIy7Pukv0CFQAAAAAdAAAAABAD',
+//     createdDate: new Date(),
+//     snaps: 89,
+//     location: 'Harlem'
+// })
+
 
   
 }

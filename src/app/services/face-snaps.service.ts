@@ -36,6 +36,26 @@ export class FaceSnapsService {
             createdDate: new Date(),
             snaps: 99,
             location: 'Ditrict 29éme'
+          },
+
+          {
+            id: 4,
+            title:'Shade',
+            description:'Le bras droit de Collonmouth',
+            imageUrl: 'https://townsquare.media/site/442/files/2017/05/cage-season-2-shades-pic.jpg?w=980&q=75',
+            createdDate: new Date(),
+            snaps: 19,
+            location: 'Harlem'
+          },
+
+          {
+            id: 5,
+            title:'Diamondback',
+            description:'La terreur de la famille Stones, Shade et de Luke...',
+            imageUrl: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F10%2Ferik-laray-harvey-1.jpg',
+            createdDate: new Date(),
+            snaps: 19,
+            location: 'Harlem'
           }
         ];
 
