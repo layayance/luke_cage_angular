@@ -15,7 +15,19 @@ export class FaceSnapListComponent implements OnInit {
 
 ngOnInit(): void {
   this.faceSnaps = this.faceSnapsServices.getAllFaceSnaps();
-  }
+  const tempArray = this.faceSnapsServices.getAllFaceSnaps();
+  tempArray.push({
+    id: 4,
+    title:'fdfd',
+    description:  'dfdf officière qui éssai de rétablir l\'odre à Harlem',
+    imageUrl: 'https://zupimages.net/up/18/14/63sf.jpg',
+    createdDate: new Date(),
+    snaps: 99,
+    location: 'dfdfDitrict 29éme'
+  })
+
+  
+}
 }
 
 
