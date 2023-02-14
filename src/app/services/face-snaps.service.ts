@@ -13,7 +13,7 @@ export class FaceSnapsService {
           imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQUBTV1e1Ry9QtXT-tztl71i8NgeGO1VL4w&usqp=CAU',
           createdDate:   new Date(),
           snaps:  205,
-          location: 'New York'
+          location: ' à New York'
         },
     
         {
@@ -23,7 +23,7 @@ export class FaceSnapsService {
             imageUrl: 'https://imgsrc.cineserie.com/2020/07/luke-cage-la-verite-sur-la-mort-du-personnage-de-mahershala-ali.jpg?ver=1',
             createdDate: new Date(),
             snaps: 29,
-            location: 'Harlem'
+            location: ' à son club d\'Harlem'
           },
           
            
@@ -35,7 +35,7 @@ export class FaceSnapsService {
             imageUrl: 'https://zupimages.net/up/18/14/63sf.jpg',
             createdDate: new Date(),
             snaps: 99,
-            location: 'Ditrict 29éme'
+            location: 'au ditrict 29éme'
           },
 
           {
@@ -45,17 +45,27 @@ export class FaceSnapsService {
             imageUrl: 'https://townsquare.media/site/442/files/2017/05/cage-season-2-shades-pic.jpg?w=980&q=75',
             createdDate: new Date(),
             snaps: 19,
-            location: 'Harlem'
+            location: 'au club'
           },
 
           {
             id: 5,
+            title:'Mariah',
+            description:'La grand soeur de Collonmouth',
+            imageUrl: 'https://dailymars-cdn-fra1.fra1.digitaloceanspaces.com/wp-content/uploads/2016/10/3a36814a90645d20d63de6c8ad56c87c.jpg',
+            createdDate: new Date(),
+            snaps:49,
+            location: 'devant la maison famillia'
+          },
+
+          {
+            id: 6,
             title:'Diamondback',
             description:'La terreur de la famille Stones, Shade et de Luke...',
             imageUrl: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F10%2Ferik-laray-harvey-1.jpg',
             createdDate: new Date(),
             snaps: 19,
-            location: 'Harlem'
+            location: 'à Harlem'
           }
         ];
 
