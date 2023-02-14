@@ -60,6 +60,17 @@ export class FaceSnapsService {
 
           {
             id: 6,
+            title:'Claire Temple',
+            description:'La femme qui vient au secours des hèros de marvel\'s',
+            imageUrl: 'https://cdn.mos.cms.futurecdn.net/jC4hwQWjm6v9B8UZ2cLTka-1200-80.jpg',
+            createdDate: new Date(),
+            snaps:79,
+            location: 'New York'
+          },
+
+
+          {
+            id: 7,
             title:'Diamondback',
             description:'La terreur de la famille Stones, Shade et de Luke...',
             imageUrl: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F10%2Ferik-laray-harvey-1.jpg',
