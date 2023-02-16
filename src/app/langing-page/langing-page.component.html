@@ -1,6 +1,12 @@
 <div class="landing-block">
+    <form #emailform="ngForm" (ngSubmit)="onSubmitForm(emailform)" >
+      <label for="emailInput">Inscrivez-vous pour recevoir notre newsletter ! </label>
+      <input type="email" id="emailInput" [(ngModel)]="userEmail" name="userEmail">
+      <button type="submit"> Envoyer </button>
+
+    </form>
     <img class="luke" src="assets/LukeCage-logo.png" alt="Marvel LUKE CAGE logo">
     <div class="landing-links">
-      <button (click)="onContinue()" >Continuer vers Snapface</button>
+      <button (click)="onContinue()" >Continuer vers SérieFace</button>
     </div>
   </div>

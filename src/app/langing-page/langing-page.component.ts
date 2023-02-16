@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
+import{ NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-langing-page',
@@ -7,6 +8,8 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./langing-page.component.scss']
 })
 export class LangingPageComponent {
+
+  userEmail!: string ;
 
   constructor (private route: Router){ }
 
@@ -16,6 +19,10 @@ export class LangingPageComponent {
 
   onContinue(){
     this.route.navigateByUrl('facesnaps');
+  } 
+
+  onSubmitForm(form: NgForm): void{
+    console.log(form.value);
   }
 
 }
