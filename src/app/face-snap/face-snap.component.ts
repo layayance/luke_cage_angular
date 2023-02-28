@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
 import { FaceSnap } from '../models/face-snap.model'; 
 import { FaceSnapsService } from '../services/face-snaps.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-face-snap',
@@ -9,7 +10,8 @@ import { FaceSnapsService } from '../services/face-snaps.service';
   styleUrls: ['./face-snap.component.scss']
 })
 export class FaceSnapComponent implements OnInit{
-  @Input()faceSnap!: FaceSnap;
+  //@Input()faceSnap! : Observable<FaceSnap>;
+  @Input()faceSnap! :FaceSnap;
   buttonText!: string;
 
 constructor (private FaceSnapsService: FaceSnapsService, private route: ActivatedRoute, private router: Router){}
@@ -17,7 +19,7 @@ constructor (private FaceSnapsService: FaceSnapsService, private route: Activate
   ngOnInit() {
     this.buttonText = 'Plus, 1 !';
     const faceSnapId = +this.route.snapshot.params['id']; 
-    this.faceSnap = this.FaceSnapsService.getFaceSnapById(faceSnapId);
+   // this.faceSnap = this.FaceSnapsService.getFaceSnapById(faceSnapId);
   }
   onSnap() {
     if (this.buttonText === 'Plus, 1 !') {
