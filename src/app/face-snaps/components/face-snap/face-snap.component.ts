@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
-import { FaceSnap } from '../core/models/face-snap.model'; 
-import { FaceSnapsService } from '../core/services/face-snaps.service';
+import { FaceSnap } from '../../../core/models/face-snap.model'; 
+import { FaceSnapsService } from '../../../core/services/face-snaps.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-face-snap',
@@ -9,6 +10,7 @@ import { FaceSnapsService } from '../core/services/face-snaps.service';
   styleUrls: ['./face-snap.component.scss']
 })
 export class FaceSnapComponent implements OnInit{
+  //@Input()faceSnap! : Observable<FaceSnap>;
   @Input()faceSnap! :FaceSnap;
   buttonText!: string;
 

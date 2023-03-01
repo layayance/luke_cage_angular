@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import{ NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-langing-page',
-  templateUrl: './langing-page.component.html',
-  styleUrls: ['./langing-page.component.scss']
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.scss']
 })
-export class LangingPageComponent {
+export class LandingPageComponent {
 
   userEmail!: string ;
 
